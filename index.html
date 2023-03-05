@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Labrada:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <style>
+    * {
+      font-family: 'Labrada', serif;
+    }
+
+    .nav-font {
+      font-family: 'Inter', sans-serif;
+      color: black;
+    }
+
+    .judul-font {
+      font-family: 'Mynerve', cursive;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container-kontak {
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      position: relative;
+      overflow: hidden;
+      width: auto;
+      max-width: 100%;
+      min-height: 522px;
+      min-width: auto;
+    }
+
+    .card-container {
+      display: flex;
+    }
+
+    .right {
+      display: flex;
+      flex: 1;
+      height: 460px;
+      background-color: #ffffff;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left {
+      display: flex;
+      flex: 1;
+      height: 600px;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      flex: 1;
+      background-color: #ffebcd;
+    }
+
+
+    .left-container {
+      width: 70%;
+      height: 80%;
+      text-align: center;
+    }
+
+    .left p {
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .right-container {
+      width: 70%;
+      height: 80%;
+      text-align: center;
+    }
+
+    input,
+    textarea {
+      background-color: #eee;
+      border: none;
+      padding: 12px 15px;
+      margin: 8px 0;
+      width: 100%;
+      font-size: 0.8rem;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 1px solid #ffebcd;
+    }
+
+    button {
+      border-radius: 20px;
+      border: 1px solid #ffebcd;
+      background-color: #ffebcd;
+      color: black;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 12px 45px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: transform 80ms ease-out;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+
+    textarea {
+      height: 90px;
+    }
+
+    /* responsive */
+
+    @media only screen and (max-width: 600px) {
+      .left {
+        display: none;
+      }
+
+      .lg-view {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 600px) {
+      .sm-view {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <section id="navbar">
+    <div class="container-fluid" style="background-color: #f7d39c">
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom">
+          <a href="#Home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="2">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4 nav-font" style="font-weight:bold; color: #2F4F4F;">My Portfolio</span>
+          </a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#home" class="nav-link" style="color: #191970;">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link" style="color: #191970;">About</a></li>
+            <li class="nav-item"><a href="#project" class="nav-link" style="color: #191970">Projects</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link" style="color: #191970;">Experience</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link" style="color: #191970;">Contact</a></li>
+          </ul>
+        </header>
+      </div>
+    </div>
+  </section>
+  <!-- End Navbar -->
+
+  <!-- Halaman Home -->
+  <section id="home">
+    <div class="container-fluid" style="background-image: url('img/bg1.gif');">
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img style="border-radius:100px;" src="img/imghome.svg" class="d-block mx-lg-auto img-fluid" alt="image"
+              width="300" height="300" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3 judul-font">Hai, Saya Bethania</h1>
+            <p class="lead">Mahasiswa semester 6 - Sistem Informasi</p>
+            <p class="lead">Institut Informatika dan Bisnis Darmajaya</p>
+            <p><a class="btn btn-primary"
+                href="https://drive.google.com/file/d/1rRO4OilYXByd9D7qYh0INCGMyYSCdzpn/view?usp=sharing">Download CV
+                &raquo;</a></p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffebcd" fill-opacity="1"
+        d="M0,160L10.9,160C21.8,160,44,160,65,154.7C87.3,149,109,139,131,117.3C152.7,96,175,64,196,85.3C218.2,107,240,181,262,186.7C283.6,192,305,128,327,133.3C349.1,139,371,213,393,208C414.5,203,436,117,458,112C480,107,502,181,524,202.7C545.5,224,567,192,589,192C610.9,192,633,224,655,240C676.4,256,698,256,720,229.3C741.8,203,764,149,785,138.7C807.3,128,829,160,851,149.3C872.7,139,895,85,916,96C938.2,107,960,181,982,224C1003.6,267,1025,277,1047,272C1069.1,267,1091,245,1113,245.3C1134.5,245,1156,267,1178,250.7C1200,235,1222,181,1244,144C1265.5,107,1287,85,1309,64C1330.9,43,1353,21,1375,37.3C1396.4,53,1418,107,1429,133.3L1440,160L1440,0L1429.1,0C1418.2,0,1396,0,1375,0C1352.7,0,1331,0,1309,0C1287.3,0,1265,0,1244,0C1221.8,0,1200,0,1178,0C1156.4,0,1135,0,1113,0C1090.9,0,1069,0,1047,0C1025.5,0,1004,0,982,0C960,0,938,0,916,0C894.5,0,873,0,851,0C829.1,0,807,0,785,0C763.6,0,742,0,720,0C698.2,0,676,0,655,0C632.7,0,611,0,589,0C567.3,0,545,0,524,0C501.8,0,480,0,458,0C436.4,0,415,0,393,0C370.9,0,349,0,327,0C305.5,0,284,0,262,0C240,0,218,0,196,0C174.5,0,153,0,131,0C109.1,0,87,0,65,0C43.6,0,22,0,11,0L0,0Z">
+      </path>
+    </svg>
+  </section>
+  <!-- End halaman home -->
+
+  <!-- Start about -->
+  <section id="about">
+    <div class="container-fluid">
+      <div class="px-4 pt-5 my-5 text-center">
+        <h1 class="display-5 fw-bold lh-1 mb-3 judul-font">About Me</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4"> Saya adalah Bethania Andani seorang mahasiswi semester 6 jurusan Sistem Informasi di
+            Institut Informatika dan Bisnis Darmajaya.
+            Saat ini, Saya memiliki pengalaman kerja sebagai Asisten Laboratorium Komputer dan memiliki ketertarikan
+            mendalami dunia design dan programming.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffebcd" fill-opacity="1"
+        d="M0,160L10.9,160C21.8,160,44,160,65,154.7C87.3,149,109,139,131,117.3C152.7,96,175,64,196,85.3C218.2,107,240,181,262,186.7C283.6,192,305,128,327,133.3C349.1,139,371,213,393,208C414.5,203,436,117,458,112C480,107,502,181,524,202.7C545.5,224,567,192,589,192C610.9,192,633,224,655,240C676.4,256,698,256,720,229.3C741.8,203,764,149,785,138.7C807.3,128,829,160,851,149.3C872.7,139,895,85,916,96C938.2,107,960,181,982,224C1003.6,267,1025,277,1047,272C1069.1,267,1091,245,1113,245.3C1134.5,245,1156,267,1178,250.7C1200,235,1222,181,1244,144C1265.5,107,1287,85,1309,64C1330.9,43,1353,21,1375,37.3C1396.4,53,1418,107,1429,133.3L1440,160L1440,320L1429.1,320C1418.2,320,1396,320,1375,320C1352.7,320,1331,320,1309,320C1287.3,320,1265,320,1244,320C1221.8,320,1200,320,1178,320C1156.4,320,1135,320,1113,320C1090.9,320,1069,320,1047,320C1025.5,320,1004,320,982,320C960,320,938,320,916,320C894.5,320,873,320,851,320C829.1,320,807,320,785,320C763.6,320,742,320,720,320C698.2,320,676,320,655,320C632.7,320,611,320,589,320C567.3,320,545,320,524,320C501.8,320,480,320,458,320C436.4,320,415,320,393,320C370.9,320,349,320,327,320C305.5,320,284,320,262,320C240,320,218,320,196,320C174.5,320,153,320,131,320C109.1,320,87,320,65,320C43.6,320,22,320,11,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- End About -->
+
+  <!-- Start Projek -->
+  <section id="project" style="background-color: #ffebcd;">
+    <div class="container">
+      <div class="row">
+        <h1 class="display-5 fw-bold lh-1 mb-3 judul-font text-center">My Project<br><br></h1>
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="colapse mb-4">
+            <div class="card rounded-3 shadow-sm" style="border-color: black">
+              <div class="card-header text-light" style="border-color: #f7d39c; background-color: #f7d39c">
+                <h4 style="color: black; text-align: center;">Project 1</h4>
+              </div>
+              <div>
+                <img class="img-fluid rounded-end" src="img/project1.png" alt="Project 1"
+                  style="width:400px;height:200px;" />
+              </div>
+              <div class="card-body">
+                <h1 class="my-0 font-weight-normal" style="text-align: center;">Program Studi Tim</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Proyek ini merupakan proyek tugas kelompok pada matakuliah Pemrograman Web Lanjut dengan
+                    menggunakan
+                    PHP,
+                    HTML, CSS dan Js. </li>
+                  <br>
+                  <a class="btn btn-primary"
+                    href="https://drive.google.com/file/d/1nEbJMyZ-0KnTIH--XI8Ol4kYFkCaeJrI/view?usp=share_link">View
+                    Project</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="colapse mb-4">
+            <div class="card rounded-3 shadow-sm" style="border-color: black">
+              <div class="card-header text-light" style="border-color: #f7d39c; background-color: #f7d39c">
+                <h4 style="color: black; text-align: center;">Project 2</h4>
+              </div>
+              <div>
+                <img class="img-fluid rounded-end" src="img/project2.PNG" alt=" Project 1"
+                  style="width: 400px;height:200px;" />
+              </div>
+              <div class="card-body">
+                <h1 class="my-0 font-weight-normal" style="text-align: center;">Program Studi</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Proyek ini merupakan tugas UAS matakuliah Pemrograman Web Lanjut dengan menggunakan HTML, CSS dan
+                    Js. </li>
+                  <br>
+                  <a class="btn btn-primary"
+                    href="https://drive.google.com/file/d/1UTdZDI_xFQx8NIc20aT7JIji2ryZhg0p/view?usp=sharing">View
+                    Project</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="colapse mb-4">
+            <div class="card rounded-3 shadow-sm" style="border-color: black">
+              <div class="card-header text-light" style="border-color: #f7d39c; background-color: #f7d39c">
+                <h4 style="color: black; text-align: center;">Project 3</h4>
+              </div>
+              <div>
+                <img class="img-fluid rounded-end" src="img/project3.png" alt=" Project 1"
+                  style="width: 400px;;height:200px;" />
+              </div>
+              <div class="card-body">
+                <h1 class="my-0 font-weight-normal" style="text-align: center;">Mentor On Demand</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Proyek ini merupakan tugas challenge pada MSIB 3 UI/UX Design dengan menggunakan Figma secara
+                    berkelompok. </li>
+                  <br>
+                  <a class="btn btn-primary"
+                    href="https://medium.com/@bethaniaandani14/ux-case-study-skilvul-mentor-on-demand-e8c4d1b2836">View
+                    Project</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Project  -->
+
+  <!-- Experience -->
+  <section id="experience" style="background-color: #ffffff;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffebcd" fill-opacity="1"
+        d="M0,160L10.9,160C21.8,160,44,160,65,154.7C87.3,149,109,139,131,117.3C152.7,96,175,64,196,85.3C218.2,107,240,181,262,186.7C283.6,192,305,128,327,133.3C349.1,139,371,213,393,208C414.5,203,436,117,458,112C480,107,502,181,524,202.7C545.5,224,567,192,589,192C610.9,192,633,224,655,240C676.4,256,698,256,720,229.3C741.8,203,764,149,785,138.7C807.3,128,829,160,851,149.3C872.7,139,895,85,916,96C938.2,107,960,181,982,224C1003.6,267,1025,277,1047,272C1069.1,267,1091,245,1113,245.3C1134.5,245,1156,267,1178,250.7C1200,235,1222,181,1244,144C1265.5,107,1287,85,1309,64C1330.9,43,1353,21,1375,37.3C1396.4,53,1418,107,1429,133.3L1440,160L1440,0L1429.1,0C1418.2,0,1396,0,1375,0C1352.7,0,1331,0,1309,0C1287.3,0,1265,0,1244,0C1221.8,0,1200,0,1178,0C1156.4,0,1135,0,1113,0C1090.9,0,1069,0,1047,0C1025.5,0,1004,0,982,0C960,0,938,0,916,0C894.5,0,873,0,851,0C829.1,0,807,0,785,0C763.6,0,742,0,720,0C698.2,0,676,0,655,0C632.7,0,611,0,589,0C567.3,0,545,0,524,0C501.8,0,480,0,458,0C436.4,0,415,0,393,0C370.9,0,349,0,327,0C305.5,0,284,0,262,0C240,0,218,0,196,0C174.5,0,153,0,131,0C109.1,0,87,0,65,0C43.6,0,22,0,11,0L0,0Z">
+      </path>
+    </svg>
+    <div class="container">
+      <div class="row">
+        <h1 class="display-5 fw-bold lh-1 mb-3 judul-font text-center">My Experience<br><br></h1>
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="colapse mb-4">
+            <div class="card rounded-3 shadow-sm" style="border-color: black">
+              <div class="card-header text-light" style="border-color: #f7d39c; background-color: #f7d39c">
+                <h4 style="color: black; text-align: center;">Experience 1</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="my-0 font-weight-normal" style="text-align: center;">Asisten Lab </small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>November 2021 - Sekarang</li>
+                  <br>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="colapse mb-4">
+            <div class="card rounded-3 shadow-sm" style="border-color: black">
+              <div class="card-header text-light" style="border-color: #f7d39c; background-color: #f7d39c">
+                <h4 style="color: black; text-align: center;">Experience 2</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="my-0 font-weight-normal" style="text-align: center;">Anggota</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Desember 2020 - Sekarang</li>
+                  <p>Menjabat sebagai anggota divisi rupa di UKMBS Komunitas Biroe</p>
+                  <br>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="colapse mb-4">
+            <div class="card rounded-3 shadow-sm" style="border-color: black">
+              <div class="card-header text-light" style="border-color: #f7d39c; background-color: #f7d39c">
+                <h4 style="color: black; text-align: center;">Experience 3</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="my-0 font-weight-normal" style="text-align: center;">Kepala Divisi Rupa</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Februari 2022 - Agustus 2022</li>
+                  <p>Menjabat sebagai kepala divisi rupa di UKMBS Komunitas Biroe</p>
+                  <br>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="colapse mb-4">
+            <div class="card rounded-3 shadow-sm" style="border-color: black">
+              <div class="card-header text-light" style="border-color: #f7d39c; background-color: #f7d39c">
+                <h4 style="color: black; text-align: center;">Experience 4</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="my-0 font-weight-normal" style="text-align: center;">Anggota</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>September 2020 - September 2021</li>
+                  <p>Menjabat sebagai anggota di Hima Sistem Informasi</p>
+                  <br>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffebcd" fill-opacity="1"
+        d="M0,160L10.9,160C21.8,160,44,160,65,154.7C87.3,149,109,139,131,117.3C152.7,96,175,64,196,85.3C218.2,107,240,181,262,186.7C283.6,192,305,128,327,133.3C349.1,139,371,213,393,208C414.5,203,436,117,458,112C480,107,502,181,524,202.7C545.5,224,567,192,589,192C610.9,192,633,224,655,240C676.4,256,698,256,720,229.3C741.8,203,764,149,785,138.7C807.3,128,829,160,851,149.3C872.7,139,895,85,916,96C938.2,107,960,181,982,224C1003.6,267,1025,277,1047,272C1069.1,267,1091,245,1113,245.3C1134.5,245,1156,267,1178,250.7C1200,235,1222,181,1244,144C1265.5,107,1287,85,1309,64C1330.9,43,1353,21,1375,37.3C1396.4,53,1418,107,1429,133.3L1440,160L1440,320L1429.1,320C1418.2,320,1396,320,1375,320C1352.7,320,1331,320,1309,320C1287.3,320,1265,320,1244,320C1221.8,320,1200,320,1178,320C1156.4,320,1135,320,1113,320C1090.9,320,1069,320,1047,320C1025.5,320,1004,320,982,320C960,320,938,320,916,320C894.5,320,873,320,851,320C829.1,320,807,320,785,320C763.6,320,742,320,720,320C698.2,320,676,320,655,320C632.7,320,611,320,589,320C567.3,320,545,320,524,320C501.8,320,480,320,458,320C436.4,320,415,320,393,320C370.9,320,349,320,327,320C305.5,320,284,320,262,320C240,320,218,320,196,320C174.5,320,153,320,131,320C109.1,320,87,320,65,320C43.6,320,22,320,11,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- End Experience -->
+
+  <!-- Contact -->
+  <section id="contact" style="background-color: #ffebcd;">
+    <h1 class="display-5 fw-bold lh-1 mb-3 judul-font text-center">My Contact<br><br></h1>
+    <div class="container-kontak">
+      <div class="card-container">
+        <div class="left">
+          <div class="left-container">
+            <h2>Another way to contact me!</h2>
+            <section id="maps">
+              <iframe class="border border-2 rounded-3 mx-auto"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.2591437713327!2d105.24745601398695!3d-5.377402555281887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40dac5f1bf788b%3A0x2458668e7c62825f!2sInstitut%20Informatika%20Dan%20Bisnis%20Darmajaya!5e0!3m2!1sid!2sid!4v1677852550134!5m2!1sid!2sid"
+                width="300" height="300" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <div class="sosial-media">
+              <div id="sosial-media" class="sosial-media">
+                <div class="sosial-media">
+                  <div class="i2gjFc kRIadf j2p0Pb zjopje"><a
+                      href="https://www.google.com/url?q=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D6285710088082&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw2-Z2NxAqhUN4chdnBchzn0"
+                      target="_blank" class="sosial-media" style="width: 50px; height: 50px; margin: 6px;"><img
+                        src="https://lh4.googleusercontent.com/aszQ0lRDMWOdl1mV9Du1QskNJbw33Gd2Q6kN36pes-3r2PsE22JFMWNHFGUHpUOdp8CNx_Vb704jCauzmRMU90OUkCya5NUpLuHWMgaEgwA"
+                        alt="Tautan" class="sosial-media" style="width: 50px; height: 50px;" width="50"
+                        height="50"></a><a
+                      href="https://www.google.com/url?q=https%3A%2F%2Fweb.facebook.com%2Fbethania.andani&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw2oCf_Uzl7hQ8LOlAoPnopJ"
+                      target="_blank" class="RNpQXe" style="width: 50px; height: 50px; margin: 6px;"><img
+                        src="https://lh5.googleusercontent.com/_Rb9Pve3YoOW-N2jsDv7RpsXxzjDQ6y6DM-vFrKAVCe03KRZ4g8VKbaCawrklrbgcInoo2_i7sdM0VQBMg2AIJQXdcH0izdv8eED67GK-dw"
+                        alt="Facebook" class="sosial-media" style="width: 50px; height: 50px;" width="50"
+                        height="50"></a><a
+                      href="https://www.google.com/url?q=https%3A%2F%2Fwww.instagram.com%2Fbethaniaandani%2F&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw0UCK7NxZH7JfKtZ9F-Qmo1"
+                      target="_blank" class="RNpQXe" style="width: 50px; height: 50px; margin: 6px;"><img
+                        src="https://lh3.googleusercontent.com/_pXthUidsxecxzcRziaGNtXsY9xOtmjRvdgO3wupMTpJOe3fy-rjCz5IvSMzUggi80SW3GQvVicbWesv_vn1JPX0Cu4CbcJ1v0Mo8T23Rjs"
+                        alt="Instagram" class="sosial-media" style="width: 50px; height: 50px;" width="50"
+                        height="50"></a><a href="mailto:bethaniaandani14@gmail.com" target="_blank" class="RNpQXe"
+                      style="width: 50px; height: 50px; margin: 6px;"><img
+                        src="https://lh3.googleusercontent.com/kFZyo8da5pV8iCPPnQq6mQOXKRKvPT5OkDFbs3uu8giKaS-PgfeqUlbrzPn3bM9dlQSg8VJPeAY71Op05lCKyeaH7ciUPt9TKe_LxjcV5iA"
+                        alt="Email" class="sosial-media" style="width: 50px; height: 50px;" width="50"
+                        height="50"></a><a href="mailto:bethaniaandani.2011050079@mail.darmajaya.ac.id" target="_blank"
+                      class="RNpQXe" style="width: 50px; height: 50px; margin: 6px;"><img
+                        src="https://lh4.googleusercontent.com/GVKl1ouVnk3ZC7lZ8n1vFJ_GZOTR8J898JXiQHTEHlyMLVP4i7Q4Cp1iLKVzeNvBGFQ-k5QxVsaH7QjPRl5oYvDAKJseaYVwKPkqGVLJHOQ"
+                        alt="Email" class="sosial-media" style="width: 50px; height: 50px;" width="50" height="50"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right-container">
+            <form action="">
+              <h2 class="lg-view">Contact Us</h2>
+              <input type="text" placeholder="Nama">
+              <input type="email" placeholder="Email">
+              <textarea rows="10" placeholder="Pesan"></textarea>
+              <button>Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Contact -->
+
+  <!--   Start Footer -->
+  <footer class="text-center text-white" style="background-color: #f7d39c;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffebcd" fill-opacity="1"
+        d="M0,160L10.9,160C21.8,160,44,160,65,154.7C87.3,149,109,139,131,117.3C152.7,96,175,64,196,85.3C218.2,107,240,181,262,186.7C283.6,192,305,128,327,133.3C349.1,139,371,213,393,208C414.5,203,436,117,458,112C480,107,502,181,524,202.7C545.5,224,567,192,589,192C610.9,192,633,224,655,240C676.4,256,698,256,720,229.3C741.8,203,764,149,785,138.7C807.3,128,829,160,851,149.3C872.7,139,895,85,916,96C938.2,107,960,181,982,224C1003.6,267,1025,277,1047,272C1069.1,267,1091,245,1113,245.3C1134.5,245,1156,267,1178,250.7C1200,235,1222,181,1244,144C1265.5,107,1287,85,1309,64C1330.9,43,1353,21,1375,37.3C1396.4,53,1418,107,1429,133.3L1440,160L1440,0L1429.1,0C1418.2,0,1396,0,1375,0C1352.7,0,1331,0,1309,0C1287.3,0,1265,0,1244,0C1221.8,0,1200,0,1178,0C1156.4,0,1135,0,1113,0C1090.9,0,1069,0,1047,0C1025.5,0,1004,0,982,0C960,0,938,0,916,0C894.5,0,873,0,851,0C829.1,0,807,0,785,0C763.6,0,742,0,720,0C698.2,0,676,0,655,0C632.7,0,611,0,589,0C567.3,0,545,0,524,0C501.8,0,480,0,458,0C436.4,0,415,0,393,0C370.9,0,349,0,327,0C305.5,0,284,0,262,0C240,0,218,0,196,0C174.5,0,153,0,131,0C109.1,0,87,0,65,0C43.6,0,22,0,11,0L0,0Z">
+      </path>
+    </svg>
+    <div class="text-center text-dark p-3">
+      © 2023 Copyright: Bethania Andani 4875928
+    </div>
+  </footer>
+  <!-- End Footer -->
+</body>
+
+</html>
